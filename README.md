@@ -4,7 +4,7 @@ Realizar lectura y escritura de ficheros XLS, CSV, JSON y XML con DOM en Java.
 ### Estructura del proyecto:
 ```mermaid
 graph
-A(Acceso.jsp) --> B{ServletAcceso.java}
+A(Acceso.jsp) --> B[ServletAcceso.java]
 B --> C[Error.jsp]
 B --> D[DatosAbiertosCSV.jsp]
 B --> E[DatosAbiertosJSON.jsp]
