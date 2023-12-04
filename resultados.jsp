@@ -4,7 +4,7 @@
 	pageEncoding="ISO-8859-1"%>
 
 <%
-ArrayList<Ubicacion> datos = (ArrayList<Ubicacion>) request.getAttibute("datos");
+ArrayList<Ubicacion> datos = (ArrayList<Ubicacion>) request.getAttribute("datos");
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +19,7 @@ ArrayList<Ubicacion> datos = (ArrayList<Ubicacion>) request.getAttibute("datos")
 	if (datos != null) {
 	%>
 	<table>
-		<tr>
+		<tr class="encabezado">
 			<td>NOMBRE</td>
 			<td>DISTRITO</td>
 			<td>CALLE</td>
