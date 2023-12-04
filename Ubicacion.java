@@ -53,7 +53,7 @@ public class Ubicacion {
 	}
 
 	public void setNumero(String numero) {
-		if (numero.equalsIgnoreCase("s/n")) {
+		if (numero.equalsIgnoreCase("s/n") || numero.equalsIgnoreCase("0")) {
 			numero = "";
 		}
 		this.numero = numero;
