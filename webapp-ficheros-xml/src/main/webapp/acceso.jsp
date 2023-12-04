@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<%@page errorPage="error.jsp"%>
+	<%@page errorPage="error.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,7 +32,7 @@
 
 <body>
 	<h1>TRATAMIENTO FICHEROS</h1>
-	<form>
+	<form action="ServletAcceso" method="post">
 		<table width="45%">
 			<tr>
 				<td>
@@ -60,7 +60,7 @@
 						<tr>
 							<td>Lectura:</td>
 							<td><input type="radio" name="accion" value="lectura"
-								id="r_lectura" selected></td>
+								id="r_lectura"></td>
 						</tr>
 						<tr>
 							<td>Escritura:</td>
@@ -104,7 +104,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td><input type="submit" value="Enviar"></td>
+				<td><input type="submit" name="boton" value="Enviar"></td>
 				<%
 				boolean error = request.getAttribute("error") != null;
 				if (error) {
