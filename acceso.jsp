@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-	<%@page errorPage="error.jsp" %>
+<%@page errorPage="error.jsp"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +9,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tratamiento de ficheros</title>
 <script type="text/javascript">
+	function validData() {
+		const datos = document.getElementsByClassName("datos")
+		for (let i = 0; i < datos.length; i++) {
+			if (datos[i].value === "") {
+				document.getElementById("p_error").innerText = "(*) El campo "
+						+ datos[i].name + " no debe estar vacÃ­o."
+				return false
+			}
+			if (datos[i].name === "latitud" || datos[i].name === "longitud") {
+				if (!isDigit(datos[i])) {
+					document.getElementById("p_error").innerText = "(*) El campo "
+							+ datos[i].name + " debe ser un numero vÃ¡lido."
+					return false
+				}
+			}
+		}
+		if (document.getElementById("i_numero").value !== "") {
+			if (!isDigit(document.getElementById("i_numero"))) {
+				document.getElementById("p_error").innerText = "(*) El campo "
+						+ datos[i].name + " debe ser un numero vÃ¡lido."
+				return false
+			}
+		}
+		document.getElementById("p_error").innerText = ""
+		return true
+	}
+
+	function isDigit(num) {
+		return !isNaN(parseFloat(num.value))
+	}
+
+	function checkData() {
+		if (document.getElementById("r_escritura").checked) {
+			if (!validData()) {
+				return false
+			}
+		}
+	}
+
 	window.onload = function() {
 		document.getElementById("r_lectura").onclick = disableElements
 		document.getElementById("r_escritura").onclick = enableElements
@@ -19,6 +58,7 @@
 		for (let i = 0; i < datos.length; i++) {
 			datos[i].disabled = true
 		}
+		document.getElementById("i_numero").disabled = true
 	}
 
 	function enableElements() {
@@ -26,13 +66,14 @@
 		for (let i = 0; i < datos.length; i++) {
 			datos[i].disabled = false
 		}
+		document.getElementById("i_numero").disabled = false
 	}
 </script>
 </head>
 
 <body>
 	<h1>TRATAMIENTO FICHEROS</h1>
-	<form action="ServletAcceso" method="post">
+	<form id="form" action="ServletAcceso" method="post">
 		<table width="45%">
 			<tr>
 				<td>
@@ -52,7 +93,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td colspan="2">¿Qué quiere hacer con el fichero?</td>
+							<td colspan="2">Â¿QuÃ© quiere hacer con el fichero?</td>
 						</tr>
 						<tr>
 							<td><br></td>
@@ -65,7 +106,7 @@
 						<tr>
 							<td>Escritura:</td>
 							<td><input type="radio" name="accion" value="escritura"
-								id="r_escritura"></td>
+								id="r_escritura" checked></td>
 						</tr>
 					</table>
 
@@ -86,15 +127,16 @@
 						</tr>
 						<tr>
 							<td>NUMERO:</td>
-							<td><input type="text" name="numero" class="datos"></td>
+							<td><input type="text" name="numero" id="i_numero"></td>
 						</tr>
 						<tr>
 							<td>LOCALIDAD:</td>
-							<td><input type="text" name="localidad" class="datos"></td>
+							<td><input type="text" name="localidad" value="Alcobendas"
+								disabled="true"></td>
 						</tr>
 						<tr>
 							<td>LATITUD:</td>
-							<td><textarea name="latitud" class="datos"></textarea></td>
+							<td><input type="text" name="latitud" class="datos"></td>
 						</tr>
 						<tr>
 							<td>LONGITUD:</td>
@@ -104,20 +146,11 @@
 				</td>
 			</tr>
 			<tr>
-				<td><input type="submit" name="boton" value="Enviar"></td>
-				<%
-				boolean error = request.getAttribute("error") != null;
-				if (error) {
-				%>
-				<td>
-					<!-- aqui hay que añadir para mostrar un texto si hay datos no introducidos -->
-					<h4>(*) Los campos no pueden estar vacíos</h4>
-				</td>
-				<%
-				}
-				%>
+				<td><input type="submit" name="boton" id="b_enviar"
+					value="Enviar" onclick="return checkData();"></td>
 			</tr>
 		</table>
+		<p id="p_error" style="color: red;"></p>
 	</form>
 </body>
 
