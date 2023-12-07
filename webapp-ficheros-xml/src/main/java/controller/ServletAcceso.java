@@ -6,6 +6,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 //import servicios.ConexionXLS;
+import services.ConexionXML;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -44,38 +45,54 @@ public class ServletAcceso extends HttpServlet {
 			String tipo = request.getParameter("accion");
 			if (tipo.equals("lectura")) {
 				switch (formato) {
-				/*case "XLS":
-					ConexionXLS con = new ConexionXLS();
-					datos = con.read();
-					break;*/
+				case "XLS":
+					/*
+					 * ConexionXLS con = new ConexionXLS(); datos = con.read();
+					 */
+					break;
 				case "XML":
 					ConexionXML con = new ConexionXML();
-					datos = con.read();
+					try {
+						datos = con.read();
+						page = "resultados.jsp";
+					} catch (Exception e) {
+						request.setAttribute("error", "Archivo no encontrado. Revisa la ruta.");
+						page = "error.jsp";
+					}
+
 					break;
 				default:
-					//no controlado;
+					// no controlado;
 					break;
 				}
-				page = "resultados.jsp";
+
 			} else {
 				if (!request.getParameter("nombre").isEmpty()) {
 					switch (formato) {
-					/*case "XLS":
-						ConexionXLS con = new ConexionXLS();
-						con.write(new Ubicacion());
-						datos = con.read();
-						page = "resultados.jsp";
-						break;*/
+					case "XLS":
+						/*
+						 * ConexionXLS con = new ConexionXLS(); con.write(new Ubicacion()); datos =
+						 * con.read();
+						 */
+						break;
 					case "XML":
 						ConexionXML con = new ConexionXML();
-						con.write(new Ubicacion());
-						datos = con.read();
-						page = "resultados.jsp";
+						try {
+							con.write(new Ubicacion());
+							datos = con.read();
+							page = "resultados.jsp";
+						} catch (Exception e) {
+							request.setAttribute("error", "Archivo no encontrado. Revisa la ruta.");
+							page = "error.jsp";
+						}
+
 						break;
+
 					default:
-						//no controlado;
+						// no controlado;
 						break;
 					}
+					page = "resultados.jsp";
 				}
 			}
 			break;

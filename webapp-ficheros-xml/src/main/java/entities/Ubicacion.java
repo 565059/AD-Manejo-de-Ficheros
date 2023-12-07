@@ -1,7 +1,5 @@
 package entities;
 
-import jakarta.xml.bind.annotation.XmlAttribute;
-
 public class Ubicacion {
 
 	private String nombre;
@@ -26,7 +24,6 @@ public class Ubicacion {
 		this.longitud = longitud;
 	}
 
-	@XmlAttribute(name = "Distrito")
 	public String getDistrito() {
 		return distrito;
 	}
@@ -35,7 +32,6 @@ public class Ubicacion {
 		this.distrito = distrito;
 	}
 
-	@XmlAttribute(name = "Nombre")
 	public String getNombre() {
 		return nombre;
 	}
@@ -44,7 +40,6 @@ public class Ubicacion {
 		this.nombre = nombre;
 	}
 
-	@XmlAttribute(name = "Calle")
 	public String getCalle() {
 		return calle;
 	}
@@ -53,7 +48,6 @@ public class Ubicacion {
 		this.calle = calle;
 	}
 
-	@XmlAttribute(name = "Número")
 	public String getNumero() {
 		return numero;
 	}
@@ -65,7 +59,6 @@ public class Ubicacion {
 		this.numero = numero;
 	}
 
-	@XmlAttribute(name = "Localidad")
 	public String getLocalidad() {
 		return localidad;
 	}
@@ -74,7 +67,6 @@ public class Ubicacion {
 		this.localidad = localidad;
 	}
 
-	@XmlAttribute(name = "Latitud")
 	public Double getLatitud() {
 		return latitud;
 	}
@@ -83,7 +75,6 @@ public class Ubicacion {
 		this.latitud = latitud;
 	}
 
-	@XmlAttribute(name = "Longitud")
 	public Double getLongitud() {
 		return longitud;
 	}
