@@ -68,23 +68,37 @@ public class ServletAcceso extends HttpServlet {
 
 			} else {
 				if (!request.getParameter("nombre").isEmpty()) {
+					String nombre = request.getParameter("nombre");
+					String distrito = request.getParameter("distrito");
+					String calle = request.getParameter("calle");
+					String numero = request.getParameter("numero");
+					String localidad = request.getParameter("localidad");
+					Double latitud = !request.getParameter("latitud").isEmpty()
+							? Double.parseDouble(request.getParameter("latitud"))
+							: null;
+					Double longitud = !request.getParameter("longitud").isEmpty()
+							? Double.parseDouble(request.getParameter("longitud"))
+							: null;
 					switch (formato) {
 					case "XLS":
+
 						/*
-						 * ConexionXLS con = new ConexionXLS(); con.write(new Ubicacion()); datos =
-						 * con.read();
+						 * ConexionXLS con = new ConexionXLS(); 
+						 * con.write(new Ubicacion(nombre, distrito, calle, numero, localidad, latitud, longitud)); 
+						 * datos = con.read();
+						 * page = "resultados.jsp";
 						 */
 						break;
 					case "XML":
 						ConexionXML con = new ConexionXML();
-						try {
-							con.write(new Ubicacion());
+						//try {
+							con.write(new Ubicacion(nombre, distrito, calle, numero, localidad, latitud, longitud));
 							datos = con.read();
 							page = "resultados.jsp";
-						} catch (Exception e) {
+						//} catch (Exception e) {
 							request.setAttribute("error", "Archivo no encontrado. Revisa la ruta.");
 							page = "error.jsp";
-						}
+						//}
 
 						break;
 

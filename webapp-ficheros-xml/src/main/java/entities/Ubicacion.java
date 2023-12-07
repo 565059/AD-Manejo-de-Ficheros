@@ -14,9 +14,10 @@ public class Ubicacion {
 		super();
 	}
 
-	public Ubicacion(String nombre, String calle, String numero, String localidad, Double latitud, Double longitud) {
+	public Ubicacion(String nombre, String distrito,String calle, String numero, String localidad, Double latitud, Double longitud) {
 		super();
 		this.nombre = nombre;
+		this.distrito = distrito;
 		this.calle = calle;
 		this.numero = numero;
 		this.localidad = localidad;
