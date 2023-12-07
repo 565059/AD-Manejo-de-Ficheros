@@ -11,6 +11,11 @@ import services.ConexionXML;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerException;
+
+import org.xml.sax.SAXException;
+
 import entities.Ubicacion;
 
 /**
@@ -45,21 +50,15 @@ public class ServletAcceso extends HttpServlet {
 			String tipo = request.getParameter("accion");
 			if (tipo.equals("lectura")) {
 				switch (formato) {
-				case "XLS":
-					/*
-					 * ConexionXLS con = new ConexionXLS(); datos = con.read();
-					 */
-					break;
 				case "XML":
 					ConexionXML con = new ConexionXML();
 					try {
 						datos = con.read();
 						page = "resultados.jsp";
-					} catch (Exception e) {
-						request.setAttribute("error", "Archivo no encontrado. Revisa la ruta.");
+					} catch (IOException | ParserConfigurationException | SAXException e) {
+						request.setAttribute("error", "No se ha podido leer el archivo.");
 						page = "error.jsp";
 					}
-
 					break;
 				default:
 					// no controlado;
@@ -80,33 +79,21 @@ public class ServletAcceso extends HttpServlet {
 							? Double.parseDouble(request.getParameter("longitud"))
 							: null;
 					switch (formato) {
-					case "XLS":
-
-						/*
-						 * ConexionXLS con = new ConexionXLS(); 
-						 * con.write(new Ubicacion(nombre, distrito, calle, numero, localidad, latitud, longitud)); 
-						 * datos = con.read();
-						 * page = "resultados.jsp";
-						 */
-						break;
 					case "XML":
 						ConexionXML con = new ConexionXML();
-						//try {
+						try {
 							con.write(new Ubicacion(nombre, distrito, calle, numero, localidad, latitud, longitud));
 							datos = con.read();
 							page = "resultados.jsp";
-						//} catch (Exception e) {
-							request.setAttribute("error", "Archivo no encontrado. Revisa la ruta.");
+						} catch (IOException | ParserConfigurationException | SAXException | TransformerException e) {
+							request.setAttribute("error", "No se ha podido escribir sobre el archivo.");
 							page = "error.jsp";
-						//}
-
+						}
 						break;
-
 					default:
 						// no controlado;
 						break;
 					}
-					page = "resultados.jsp";
 				}
 			}
 			break;

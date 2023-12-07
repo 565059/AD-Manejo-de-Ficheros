@@ -1,13 +1,13 @@
 package services;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
@@ -18,6 +18,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
 import entities.Ubicacion;
 
@@ -25,49 +26,38 @@ public class ConexionXML {
 
 	private File file = new File("F:\\AD-Manejo-de-Ficheros\\webapp-ficheros-xml\\src\\main\\resources\\datos.xml");
 
-	public ArrayList<Ubicacion> read() {
-		ArrayList<Ubicacion> ubicaciones = new ArrayList<Ubicacion>();
-		Document doc = null;
-		try {
-			doc = getDocument();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		if (doc != null) {
-			NodeList nodeList = doc.getElementsByTagName("row");
-
-			for (int i = 0; i < nodeList.getLength(); i++) {
-				Node node = nodeList.item(i);
-
-				if (node.getNodeType() == Node.ELEMENT_NODE) {
-					Ubicacion ubicacion = new Ubicacion();
-					Element row = (Element) node;
-					ubicacion.setNombre(row.getAttribute("Nombre"));
-					ubicacion.setDistrito(row.getAttribute("Distrito"));
-					ubicacion.setCalle(row.getAttribute("Calle"));
-					ubicacion.setNumero(row.getAttribute("Número"));
-					ubicacion.setLocalidad(row.getAttribute("Localidad"));
-					ubicacion.setLatitud(Double.parseDouble(row.getAttribute("Latitud")));
-					ubicacion.setLongitud(Double.parseDouble(row.getAttribute("Longitud")));
-					ubicaciones.add(ubicacion);
-				}
+	// Leectura XML
+	public ArrayList<Ubicacion> read() throws IOException, ParserConfigurationException, SAXException {
+		ArrayList<Ubicacion> ubies = new ArrayList<Ubicacion>();
+		Document doc = getDocument();
+		
+		// Recoge los nodos row y los añade al ArrayList
+		NodeList nodes = doc.getElementsByTagName("row");
+		for (int i = 0; i < nodes.getLength(); i++) {
+			Node node = nodes.item(i);
+			
+			if (node.getNodeType() == Node.ELEMENT_NODE) {
+				Ubicacion ubi = new Ubicacion();
+				Element row = (Element) node;
+				ubi.setNombre(row.getAttribute("Nombre"));
+				ubi.setDistrito(row.getAttribute("Distrito"));
+				ubi.setCalle(row.getAttribute("Calle"));
+				ubi.setNumero(row.getAttribute("Número"));
+				ubi.setLocalidad(row.getAttribute("Localidad"));
+				ubi.setLatitud(Double.parseDouble(row.getAttribute("Latitud")));
+				ubi.setLongitud(Double.parseDouble(row.getAttribute("Longitud")));
+				ubies.add(ubi);
 			}
-		} else {
-			System.out.println("El doc especificado no se ha encontrado. Revisa la ruta.");
 		}
-
-		return ubicaciones;
+		return ubies;
 	}
 
-	public void write(Ubicacion ubi) {
-		Document doc = null;
-		try {
-			doc = getDocument();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	// Escritura XML
+	public void write(Ubicacion ubi)
+			throws IOException, ParserConfigurationException, SAXException, TransformerException {
+		Document doc = getDocument();
+
+		// Crea un nuevo elemento row a partir de la ubicacion proporcionada
 		Element row = doc.createElement("row");
 		row.setAttribute("Nombre", ubi.getNombre());
 		row.setAttribute("Distrito", ubi.getDistrito());
@@ -78,26 +68,25 @@ public class ConexionXML {
 		row.setAttribute("Longitud", String.valueOf(ubi.getLongitud()));
 		doc.getDocumentElement().appendChild(row);
 
-		try (FileOutputStream output = new FileOutputStream(file)) {
-			writeXML(doc, output);
-		} catch (IOException | TransformerException e) {
-			e.printStackTrace();
-		}
+		FileOutputStream output = new FileOutputStream(file);
+		transformDocument(doc, output);
 
 	}
-	
-	private Document getDocument() throws Exception {
+
+	// Devuelve un documento a partir de un archivo
+	private Document getDocument() throws IOException, ParserConfigurationException, SAXException {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = factory.newDocumentBuilder();
 		return builder.parse(file);
 	}
-	
-	private void writeXML(Document doc, FileOutputStream output) throws TransformerException {
+
+	// Transforma un documento a un resultado
+	private void transformDocument(Document doc, FileOutputStream output) throws TransformerException {
 		TransformerFactory factory = TransformerFactory.newInstance();
 		Transformer transformer = factory.newTransformer();
 		DOMSource source = new DOMSource(doc);
 		StreamResult result = new StreamResult(output);
 		transformer.transform(source, result);
 	}
-	
+
 }

@@ -1,13 +1,13 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="entities.Ubicacion"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 
 <%
 ArrayList<Ubicacion> datos = (ArrayList<Ubicacion>) request.getAttribute("datos");
 %>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
