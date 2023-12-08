@@ -1,0 +1,290 @@
+[
+ {
+   "Nombre": "Ayuntamiento de Alcobendas",
+   "Distrito": "Norte",
+   "Calle": "PZ MAYOR",
+   "Número": "1",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5475170400635",
+   "Longitud": "-3.6416009847823"
+ },
+ {
+   "Nombre": "Campo de fútbol de Fuentelucha",
+   "Distrito": "Norte",
+   "Calle": "CL FELICIDAD DE LA",
+   "Número": "",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5499427140693",
+   "Longitud": "-3.65914664275194"
+ },
+ {
+   "Nombre": "Campo de fútbol Mario Suárez",
+   "Distrito": "Norte",
+   "Calle": "CL FCO LARGO CABALLERO",
+   "Número": "",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.554620414423",
+   "Longitud": "-3.64609468761825"
+ },
+ {
+   "Nombre": "Campo de fútbol Navarra 1",
+   "Distrito": "Norte",
+   "Calle": "AV ESPAÑA",
+   "Número": "",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5444309013988",
+   "Longitud": "-3.64442565062449"
+ },
+ {
+   "Nombre": "Campo de fútbol Óscar Molina",
+   "Distrito": "Norte",
+   "Calle": "CL MANUEL DE FALLA",
+   "Número": "54",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.552192",
+   "Longitud": "-3.641694"
+ },
+ {
+   "Nombre": "Campo de Rugby Las Terrazas ",
+   "Distrito": "Urbanizaciones",
+   "Calle": "CL NARDO",
+   "Número": "101",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5295694791676",
+   "Longitud": "-3.63783785643103"
+ },
+ {
+   "Nombre": "Centro Cultural Anabel Segura",
+   "Distrito": "Urbanizaciones",
+   "Calle": "AV BRUSELAS DE",
+   "Número": "19",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5313423888376",
+   "Longitud": "-3.63668194436938"
+ },
+ {
+   "Nombre": "Centro Cultural Pablo Iglesias",
+   "Distrito": "Centro",
+   "Calle": "PS CHOPERA",
+   "Número": "59",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5429594856178",
+   "Longitud": "-3.64362527661436"
+ },
+ {
+   "Nombre": "Centro de Arte Alcobendas",
+   "Distrito": "Centro",
+   "Calle": "CL MARIANO SEBAST IZUEL",
+   "Número": "9",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5409086713193",
+   "Longitud": "-3.6307066642971"
+ },
+ {
+   "Nombre": "Centro de Mayores Carmen García Bloise",
+   "Distrito": "Norte",
+   "Calle": "CL OLIVAR",
+   "Número": "5",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5472544339476",
+   "Longitud": "-3.6481454711897"
+ },
+ {
+   "Nombre": "Centro de Mayores María Zambrano",
+   "Distrito": "Centro",
+   "Calle": "CL DAOIZ",
+   "Número": "1",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5441594566124",
+   "Longitud": "-3.64334072778109"
+ },
+ {
+   "Nombre": "Centro de Mayores Nuestra Señora de la Paz",
+   "Distrito": "Centro",
+   "Calle": "CL NTRA SRA DEL PILAR",
+   "Número": "2",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5415624053996",
+   "Longitud": "-3.63296261531018"
+ },
+ {
+   "Nombre": "Centro de Mayores Pedro González Guerra",
+   "Distrito": "Centro",
+   "Calle": "CL ORENSE",
+   "Número": "7",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5419871738286",
+   "Longitud": "-3.63662240410209"
+ },
+ {
+   "Nombre": "Centro de Mayores Ramón Rubial",
+   "Distrito": "Centro",
+   "Calle": "PZ RAMON RUBIAL",
+   "Número": "",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.542996",
+   "Longitud": "-3.624853"
+ },
+ {
+   "Nombre": "La Esfera - Sede de las Casas Regionales de Alcobendas ",
+   "Distrito": "Urbanizaciones",
+   "Calle": "AV OLIMPICA",
+   "Número": "14",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5366921737445",
+   "Longitud": "-3.63265631754081"
+ },
+ {
+   "Nombre": "Pabellón Deportivo Bachiller Alonso López ",
+   "Distrito": "Norte",
+   "Calle": "CL FCO LARGO CABALLERO",
+   "Número": "",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.553427344874",
+   "Longitud": "-3.65462947859123"
+ },
+ {
+   "Nombre": "Pabellón Deportivo Miraflores",
+   "Distrito": "Urbanizaciones",
+   "Calle": "CL MIRAFLORES",
+   "Número": "18",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5469706173792",
+   "Longitud": "-3.63874256196534"
+ },
+ {
+   "Nombre": "Pabellón Deportivo Municipal Amaya Valdemoro ",
+   "Distrito": "Urbanizaciones",
+   "Calle": "AVDA. BARAJAS",
+   "Número": "s/n",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5369082415967",
+   "Longitud": "-3.61913246278687"
+ },
+ {
+   "Nombre": "Pabellón Deportivo Municipal Antela Parada",
+   "Distrito": "Empresarial",
+   "Calle": "CL FCO CHICO MENDES",
+   "Número": "8",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5228702744111",
+   "Longitud": "-3.65363355913164"
+ },
+ {
+   "Nombre": "Pabellón Deportivo Municipal de los Sueños ",
+   "Distrito": "Norte",
+   "Calle": "AV DOCTOR SEVERO OCHOA",
+   "Número": "1",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5454267096646",
+   "Longitud": "-3.65017178227298"
+ },
+ {
+   "Nombre": "Pabellón Deportivo Pedro Ferrándiz ",
+   "Distrito": "Urbanizaciones",
+   "Calle": "AV OLIMPICA",
+   "Número": "",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5362733573646",
+   "Longitud": "-3.63466252051163"
+ },
+ {
+   "Nombre": "Pabellón Distrito Centro",
+   "Distrito": "Centro",
+   "Calle": "AV OLIMPICA",
+   "Número": "22",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5360623456202",
+   "Longitud": "-3.63491609885266"
+ },
+ {
+   "Nombre": "Pabellón Luis Buñuel",
+   "Distrito": "Norte",
+   "Calle": "CL JAEN",
+   "Número": "77",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5516076036537",
+   "Longitud": "-3.64091559997651"
+ },
+ {
+   "Nombre": "Dirección General de Bienestar Social",
+   "Distrito": "Centro",
+   "Calle": "CL LIBERTAD",
+   "Número": "6",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.540460307578",
+   "Longitud": "-3.63461925583981"
+ },
+ {
+   "Nombre": "Policía Local - Sede Central (Distrito Norte) ",
+   "Distrito": "Norte",
+   "Calle": "AV VALDELAPARRA",
+   "Número": "124",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5474953885538",
+   "Longitud": "-3.66219957879953"
+ },
+ {
+   "Nombre": "Policía Local (Sede Distrito Centro)",
+   "Distrito": "Centro",
+   "Calle": "CL LIBERTAD",
+   "Número": "8",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5402794698721",
+   "Longitud": "-3.63499194122602"
+ },
+ {
+   "Nombre": "Policía Local (Sede Distrito Urbanizaciones)",
+   "Distrito": "Urbanizaciones",
+   "Calle": "AV BRUSELAS DE",
+   "Número": "43",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.527872813321",
+   "Longitud": "-3.64303649326147"
+ },
+ {
+   "Nombre": "Sede de la Protección Civil Alcobendas - Agrupación de Voluntarios ",
+   "Distrito": "Norte",
+   "Calle": "AV VALDELAPARRA",
+   "Número": "124",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5474953885538",
+   "Longitud": "-3.66219957879953"
+ },
+ {
+   "Nombre": "Servicio de medicina deportiva de la Ciudad Deportiva Valdelasfuentes",
+   "Distrito": "Norte",
+   "Calle": "AV DON MIGUEL CERVANTES",
+   "Número": "4",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5516878930505",
+   "Longitud": "-3.65003373124356"
+ },
+ {
+   "Nombre": "Servicio de medicina deportiva del Polideportivo José Caballero",
+   "Distrito": "Urbanizaciones",
+   "Calle": "AVDA. BARAJAS",
+   "Número": "s/n",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5368525770302",
+   "Longitud": "-3.62114474428765"
+ },
+ {
+   "Nombre": "Teatro Auditorio Ciudad de Alcobendas",
+   "Distrito": "Norte",
+   "Calle": "CL BLAS DE OTERO",
+   "Número": "4",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5480924396035",
+   "Longitud": "-3.64276241328691"
+ },
+ {
+   "Nombre": "Universidad Popular Miguel Delibes de Alcobendas (UPMD)",
+   "Distrito": "Norte",
+   "Calle": "AV MAGIA DE LA",
+   "Número": "4",
+   "Localidad": "Alcobendas",
+   "Latitud": "40.5515900523583",
+   "Longitud": "-3.65745523292413"
+ }
+]
