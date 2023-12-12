@@ -1,0 +1,22 @@
+table {
+    border-radius: 10px;
+    background-color: beige;
+    width: 100%;
+    border: 1px solid;
+    border-color: black;
+}
+
+
+td {
+    margin: 15px;
+    padding: 15px;
+    border-collapse: collapse;
+    border: black 2px solid;
+}
+
+.encabezado>* {
+    background-color: slateblue;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
