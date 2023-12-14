@@ -7,7 +7,7 @@
 <title>Página de error</title>
 </head>
 <body>
-	<h2 style="color: red;">${exception.message}</h2>
+	<h2 style="color: red;"><%=exception.getMessage() %></h2>
 	<hr>
 	<form action="acceso.jsp" method="post">
 		<input type="submit" name="boton" value="Volver">

@@ -5,6 +5,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.jsp.JspException;
 import services.Conexion;
 import services.ConexionJson;
 import services.ConexionXLS;
@@ -92,23 +93,27 @@ public class ServletAcceso extends HttpServlet {
 					page = "resultados.jsp";
 				}
 			} catch (FileNotFoundException ex) {
-				request.setAttribute("javax.servlet.jsp.jspException", ex);
+				request.setAttribute("jakarta.servlet.jsp.JspException", new JspException("error no se que"));
 				page = "error.jsp";
 				ex.printStackTrace();
 			} catch (IOException ex) {
-				request.setAttribute("javax.servlet.jsp.jspException", ex);
+				request.setAttribute("jakarta.servlet.jsp.JspException", ex);
 				page = "error.jsp";
 				ex.printStackTrace();
 			} catch (ParserConfigurationException | ParseException ex) {
-				request.setAttribute("javax.servlet.jsp.jspException", ex);
+				request.setAttribute("jakarta.servlet.jsp.JspException", ex);
 				page = "error.jsp";
 				ex.printStackTrace();
 			} catch (SAXException | TransformerException e) {
-				request.setAttribute("javax.servlet.jsp.jspException", e);
+				request.setAttribute("jakarta.servlet.jsp.JspException", e);
 				page = "error.jsp";
 				e.printStackTrace();
+			} catch (CsvValidationException ex) {
+				request.setAttribute("jakarta.servlet.jsp.JspException", ex);
+				page = "error.jsp";
+				ex.printStackTrace();
 			} catch (Exception e) {
-				request.setAttribute("javax.servlet.jsp.jspException", e);
+				request.setAttribute("jakarta.servlet.jsp.JspException", e);
 				page = "error.jsp";
 				e.printStackTrace();
 			}
