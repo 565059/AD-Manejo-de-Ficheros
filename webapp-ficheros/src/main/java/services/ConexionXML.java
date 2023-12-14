@@ -24,7 +24,7 @@ import entities.Ubicacion;
 
 public class ConexionXML implements Conexion {
 
-	private File file = new File("F:\\AD-Manejo-de-Ficheros\\webapp-ficheros-xml\\src\\main\\resources\\datos.xml");
+	private File file = Files.xmlFile;
 
 	// Leectura XML
 	public ArrayList<Ubicacion> read() throws IOException, ParserConfigurationException, SAXException {

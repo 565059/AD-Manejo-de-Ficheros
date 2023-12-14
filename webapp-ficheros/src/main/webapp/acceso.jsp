@@ -130,7 +130,8 @@
 						</tr>
 						<tr>
 							<td>LOCALIDAD:</td>
-							<td><input type="text" name="localidad" value="Alcobendas" disabled></td>
+							<td><input type="text" name="localidad" value="Alcobendas"
+								disabled></td>
 						</tr>
 						<tr>
 							<td>LATITUD:</td>

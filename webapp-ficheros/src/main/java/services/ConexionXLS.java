@@ -16,7 +16,7 @@ import entities.Ubicacion;
 
 public class ConexionXLS implements Conexion {
 
-	private File f = new File("H:\\dam2\\AD\\eclipse-workspace\\webapp-ficheros\\src\\main\\resources\\datos\\datos.xls");
+	private File f = Files.xlsFile;
 
 	public ArrayList<Ubicacion> read() throws IOException {
 		ArrayList<Ubicacion> datos = new ArrayList<Ubicacion>();

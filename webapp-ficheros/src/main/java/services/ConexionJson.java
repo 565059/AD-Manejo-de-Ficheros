@@ -16,8 +16,7 @@ import org.json.simple.parser.ParseException;
 import entities.Ubicacion;
 
 public class ConexionJson implements Conexion {
-	private File f = new File(
-			"C:\\Users\\adrib\\OneDrive\\Escritorio\\Datos\\webapp-ficheros-json\\src\\main\\resources\\datos.json");
+	private File f = Files.jsonFile;
 
 	JSONParser parser = new JSONParser();
 
