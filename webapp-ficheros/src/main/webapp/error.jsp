@@ -8,6 +8,7 @@
 </head>
 <body>
 	<h2 style="color: red;"><%=exception.getMessage() %></h2>
+	<p style="color: red;"><%out.println ( exception.getStackTrace().toString());  %>   </p>
 	<hr>
 	<form action="acceso.jsp" method="post">
 		<input type="submit" name="boton" value="Volver">

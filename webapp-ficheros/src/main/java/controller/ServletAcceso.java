@@ -5,7 +5,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.jsp.JspException;
+
 import services.Conexion;
 import services.ConexionJson;
 import services.ConexionXLS;
@@ -20,6 +20,8 @@ import javax.xml.transform.TransformerException;
 
 import org.json.simple.parser.ParseException;
 import org.xml.sax.SAXException;
+
+import com.opencsv.exceptions.CsvValidationException;
 
 import entities.Ubicacion;
 
@@ -93,29 +95,17 @@ public class ServletAcceso extends HttpServlet {
 					page = "resultados.jsp";
 				}
 			} catch (FileNotFoundException ex) {
-				request.setAttribute("jakarta.servlet.jsp.JspException", new JspException("error no se que"));
-				page = "error.jsp";
-				ex.printStackTrace();
+				throw new ServletException("No  se pudo encontrar el fichero  ");
 			} catch (IOException ex) {
-				request.setAttribute("jakarta.servlet.jsp.JspException", ex);
-				page = "error.jsp";
-				ex.printStackTrace();
-			} catch (ParserConfigurationException | ParseException ex) {
-				request.setAttribute("jakarta.servlet.jsp.JspException", ex);
-				page = "error.jsp";
-				ex.printStackTrace();
-			} catch (SAXException | TransformerException e) {
-				request.setAttribute("jakarta.servlet.jsp.JspException", e);
-				page = "error.jsp";
-				e.printStackTrace();
-			} catch (CsvValidationException ex) {
-				request.setAttribute("jakarta.servlet.jsp.JspException", ex);
-				page = "error.jsp";
-				ex.printStackTrace();
+				throw new ServletException("No se pudo escribir/leer  correctamente ");
+			} catch (ParserConfigurationException | ParseException | SAXException | CsvValidationException ex) {
+				throw new ServletException("El formato que tiene el fichero no es valido ");
+			} catch (TransformerException e) {
+				throw new ServletException("No se pudo transformar correctamente ");
 			} catch (Exception e) {
-				request.setAttribute("jakarta.servlet.jsp.JspException", e);
-				page = "error.jsp";
-				e.printStackTrace();
+			
+				throw new ServletException("Error no controlado contacte con nosotros  ");
+
 			}
 			break;
 		default:
