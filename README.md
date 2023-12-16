@@ -18,4 +18,6 @@ B --> G[DatosAbiertosXLS.jsp]
 - **Adrián del Bosque Vicente**
 - **Luis Fernández Castelo**
 ---
+Reparto de las tareas: [Gantt](https://luisfernandezlf70.atlassian.net/jira/software/projects/AD/boards/1/timeline?selectedIssue=AD-31&timeline=WEEKS&shared=&atlOrigin=eyJpIjoiMWU1NjRkMzFlMzBkNGEyZDg5MWY0YjA1MTVmNTZjZWUiLCJwIjoiaiJ9)
+---
 Página de datos abiertos utilizados: https://datos.gob.es/es/catalogo/l01280066-desfibriladores-en-alcobendas1
