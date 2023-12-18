@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><root>
+	<row Calle="PZ MAYOR" Distrito="Norte" Latitud="40.5475170400635" Localidad="Alcobendas" Longitud="-3.6416009847823" Nombre="Ayuntamiento de Alcobendas" Número="1"/>
+	<row Calle="CL FELICIDAD DE LA" Distrito="Norte" Latitud="40.5499427140693" Localidad="Alcobendas" Longitud="-3.65914664275194" Nombre="Campo de fútbol de Fuentelucha" Número=""/>
+	<row Calle="CL FCO LARGO CABALLERO" Distrito="Norte" Latitud="40.554620414423" Localidad="Alcobendas" Longitud="-3.64609468761825" Nombre="Campo de fútbol Mario Suárez" Número=""/>
+	<row Calle="AV ESPAÑA" Distrito="Norte" Latitud="40.5444309013988" Localidad="Alcobendas" Longitud="-3.64442565062449" Nombre="Campo de fútbol Navarra 1" Número=""/>
+	<row Calle="CL MANUEL DE FALLA" Distrito="Norte" Latitud="40.552192" Localidad="Alcobendas" Longitud="-3.641694" Nombre="Campo de fútbol Óscar Molina" Número="54"/>
+	<row Calle="CL NARDO" Distrito="Urbanizaciones" Latitud="40.5295694791676" Localidad="Alcobendas" Longitud="-3.63783785643103" Nombre="Campo de Rugby Las Terrazas " Número="101"/>
+	<row Calle="AV BRUSELAS DE" Distrito="Urbanizaciones" Latitud="40.5313423888376" Localidad="Alcobendas" Longitud="-3.63668194436938" Nombre="Centro Cultural Anabel Segura" Número="19"/>
+	<row Calle="PS CHOPERA" Distrito="Centro" Latitud="40.5429594856178" Localidad="Alcobendas" Longitud="-3.64362527661436" Nombre="Centro Cultural Pablo Iglesias" Número="59"/>
+	<row Calle="CL MARIANO SEBAST IZUEL" Distrito="Centro" Latitud="40.5409086713193" Localidad="Alcobendas" Longitud="-3.6307066642971" Nombre="Centro de Arte Alcobendas" Número="9"/>
+	<row Calle="CL OLIVAR" Distrito="Norte" Latitud="40.5472544339476" Localidad="Alcobendas" Longitud="-3.6481454711897" Nombre="Centro de Mayores Carmen García Bloise" Número="5"/>
+	<row Calle="CL DAOIZ" Distrito="Centro" Latitud="40.5441594566124" Localidad="Alcobendas" Longitud="-3.64334072778109" Nombre="Centro de Mayores María Zambrano" Número="1"/>
+	<row Calle="CL NTRA SRA DEL PILAR" Distrito="Centro" Latitud="40.5415624053996" Localidad="Alcobendas" Longitud="-3.63296261531018" Nombre="Centro de Mayores Nuestra Señora de la Paz" Número="2"/>
+	<row Calle="CL ORENSE" Distrito="Centro" Latitud="40.5419871738286" Localidad="Alcobendas" Longitud="-3.63662240410209" Nombre="Centro de Mayores Pedro González Guerra" Número="7"/>
+	<row Calle="PZ RAMON RUBIAL" Distrito="Centro" Latitud="40.542996" Localidad="Alcobendas" Longitud="-3.624853" Nombre="Centro de Mayores Ramón Rubial" Número=""/>
+	<row Calle="AV OLIMPICA" Distrito="Urbanizaciones" Latitud="40.5366921737445" Localidad="Alcobendas" Longitud="-3.63265631754081" Nombre="La Esfera - Sede de las Casas Regionales de Alcobendas " Número="14"/>
+	<row Calle="CL FCO LARGO CABALLERO" Distrito="Norte" Latitud="40.553427344874" Localidad="Alcobendas" Longitud="-3.65462947859123" Nombre="Pabellón Deportivo Bachiller Alonso López " Número=""/>
+	<row Calle="CL MIRAFLORES" Distrito="Urbanizaciones" Latitud="40.5469706173792" Localidad="Alcobendas" Longitud="-3.63874256196534" Nombre="Pabellón Deportivo Miraflores" Número="18"/>
+	<row Calle="AVDA. BARAJAS" Distrito="Urbanizaciones" Latitud="40.5369082415967" Localidad="Alcobendas" Longitud="-3.61913246278687" Nombre="Pabellón Deportivo Municipal Amaya Valdemoro " Número="s/n"/>
+	<row Calle="CL FCO CHICO MENDES" Distrito="Empresarial" Latitud="40.5228702744111" Localidad="Alcobendas" Longitud="-3.65363355913164" Nombre="Pabellón Deportivo Municipal Antela Parada" Número="8"/>
+	<row Calle="AV DOCTOR SEVERO OCHOA" Distrito="Norte" Latitud="40.5454267096646" Localidad="Alcobendas" Longitud="-3.65017178227298" Nombre="Pabellón Deportivo Municipal de los Sueños " Número="1"/>
+	<row Calle="AV OLIMPICA" Distrito="Urbanizaciones" Latitud="40.5362733573646" Localidad="Alcobendas" Longitud="-3.63466252051163" Nombre="Pabellón Deportivo Pedro Ferrándiz " Número=""/>
+	<row Calle="AV OLIMPICA" Distrito="Centro" Latitud="40.5360623456202" Localidad="Alcobendas" Longitud="-3.63491609885266" Nombre="Pabellón Distrito Centro" Número="22"/>
+	<row Calle="CL JAEN" Distrito="Norte" Latitud="40.5516076036537" Localidad="Alcobendas" Longitud="-3.64091559997651" Nombre="Pabellón Luis Buñuel" Número="77"/>
+	<row Calle="CL LIBERTAD" Distrito="Centro" Latitud="40.540460307578" Localidad="Alcobendas" Longitud="-3.63461925583981" Nombre="Dirección General de Bienestar Social" Número="6"/>
+	<row Calle="AV VALDELAPARRA" Distrito="Norte" Latitud="40.5474953885538" Localidad="Alcobendas" Longitud="-3.66219957879953" Nombre="Policía Local - Sede Central (Distrito Norte) " Número="124"/>
+	<row Calle="CL LIBERTAD" Distrito="Centro" Latitud="40.5402794698721" Localidad="Alcobendas" Longitud="-3.63499194122602" Nombre="Policía Local (Sede Distrito Centro)" Número="8"/>
+	<row Calle="AV BRUSELAS DE" Distrito="Urbanizaciones" Latitud="40.527872813321" Localidad="Alcobendas" Longitud="-3.64303649326147" Nombre="Policía Local (Sede Distrito Urbanizaciones)" Número="43"/>
+	<row Calle="AV VALDELAPARRA" Distrito="Norte" Latitud="40.5474953885538" Localidad="Alcobendas" Longitud="-3.66219957879953" Nombre="Sede de la Protección Civil Alcobendas - Agrupación de Voluntarios " Número="124"/>
+	<row Calle="AV DON MIGUEL CERVANTES" Distrito="Norte" Latitud="40.5516878930505" Localidad="Alcobendas" Longitud="-3.65003373124356" Nombre="Servicio de medicina deportiva de la Ciudad Deportiva Valdelasfuentes" Número="4"/>
+	<row Calle="AVDA. BARAJAS" Distrito="Urbanizaciones" Latitud="40.5368525770302" Localidad="Alcobendas" Longitud="-3.62114474428765" Nombre="Servicio de medicina deportiva del Polideportivo José Caballero" Número="s/n"/>
+	<row Calle="CL BLAS DE OTERO" Distrito="Norte" Latitud="40.5480924396035" Localidad="Alcobendas" Longitud="-3.64276241328691" Nombre="Teatro Auditorio Ciudad de Alcobendas" Número="4"/>
+	<row Calle="AV MAGIA DE LA" Distrito="Norte" Latitud="40.5515900523583" Localidad="Alcobendas" Longitud="-3.65745523292413" Nombre="Universidad Popular Miguel Delibes de Alcobendas (UPMD)" Número="4"/>
+</root>
