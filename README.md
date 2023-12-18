@@ -24,6 +24,7 @@ H -- No --> Resultados.jsp
 - **Luis Fernández Castelo**
 ---
 Reparto de las tareas: [Cronograma Jira](https://luisfernandezlf70.atlassian.net/jira/software/projects/AD/boards/1/timeline?shared=&atlOrigin=eyJpIjoiZTg4NGMyZDExNDBiNDgwOTkzNjZjYTFmYTZlOGVkYzgiLCJwIjoiaiJ9)
+
 ![Cronograma-AD-Complejo](https://github.com/565059/AD-Manejo-de-Ficheros/assets/118855900/7aad9b5e-cbe6-4eb0-b50d-073c99d18a15)
 
 
